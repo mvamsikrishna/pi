@@ -1,0 +1,42 @@
+<!doctype html> 
+<html> 
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="5" > 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</div> 
+<title>taking the readings of the sensor</title> 
+<style> 
+#k 
+{ 
+  margin-top:0%; 
+  margin-left:20%; 
+  height:135%; 
+  width:60%; 
+  padding-left:50px; 
+  background-color:cyan; 
+  border:solid 10px green; 
+  color:red; 
+} 
+</style> 
+</head> 
+<body> 
+ 
+<form action="submit.php" method="post" id="k"> 
+<center><h1 style="color:red">TEMPERATURE SENSOR READINGS</h1></center> 
+ 
+READINGS:  <input type="box" id="tran" value="{{tem}}"><p></p> 
+<script> 
+function good() 
+{ 
+var number; 
+number=document.getElementById('tran').value; 
+alert(" "+number+" "); 
+ 
+ 
+ 
+} 
+</script> 
+</form> 
+</body> 
+</html>
